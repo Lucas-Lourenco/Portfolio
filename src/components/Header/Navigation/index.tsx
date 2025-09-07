@@ -15,7 +15,7 @@ export default function Navigation() {
           <li key={link.href}>
             <a
               href={link.href}
-              className="link-dourado  hover:text-yellow-500 transition-colors duration-300 pr-3"
+              className="link-dourado  hover:text-yellow-500 transition-colors duration-300 pr-3 text-2xl"
             >
               {link.label}
             </a>
