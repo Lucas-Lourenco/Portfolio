@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  
+  background-color: #212226;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #ede6bc;
+}
+
+button {
+  cursor: pointer;
+}
+
+.link-dourado {
+  position: relative;
+  padding-bottom: 0.5rem; /* Equivalente ao pb-2 do Tailwind */
+}
+
+.link-dourado::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(to right, #facc15, #f59e42, #f97316);
+  transition: all 0.3s;
+}
+
+.link-dourado:hover::after {
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+ 
+  padding: 0.2rem;
+  margin: 0.2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  color: rgb(246, 191, 52);
+  text-shadow: #f6ebd5 0px 0px 5px;
+}
+li{
+  list-style: none;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  /* espaço interno para caber o círculo */
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;              /* largura maior que o conteúdo */
+  height: 120%;             /* altura maior que o conteúdo */
+  border: 3px solid rgb(246, 191, 52); /* cor do contorno */
+  box-shadow: #e1813d 0px 0px 8px; /* sombra para o contorno */
+  border-radius: 50%;       /* vira um círculo */
+  transform: translate(-50%, -50%) scale(0); /* começa invisível */
+  transition: transform 0.3s ease;
+  z-index: -1; /* opcional para ficar atrás do texto */
+}
+
+.logo:hover::after {
+  transform: translate(-50%, -50%) scale(1); /* círculo cresce */
+}
