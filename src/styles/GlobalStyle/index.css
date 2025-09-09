@@ -9,6 +9,8 @@
  
 }
 
+
+
 body {
   
   background-color: #212226;
@@ -21,6 +23,11 @@ html {
 }
 
 button {
+  background: linear-gradient(to right, #facc15, #f59e42, #f97316);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem; /* Equivalente ao rounded-md do Tailwind */
+  color: #212226;
   cursor: pointer;
 }
 

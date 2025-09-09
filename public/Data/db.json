@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+        "id": 1,
+        "title": "Pokedex",
+        "description": "This is the first project.",
+        "image": "https://placehold.co/250x150",
+        "link": "https://example.com/project-one"
+        },
+        {
+        "id": 2,
+        "title": "Project Two",
+        "description": "This is the second project.",
+        "image": "https://placehold.co/250x150",
+        "link": "https://example.com/project-two"
+        },
+        {
+        "id": 3,    
+        "title": "Project Three",
+        "description": "This is the third project.",
+        "image": "https://placehold.co/250x150",
+        "link": "https://example.com/project-three"
+        },
+        {
+        "id": 4,
+        "title": "Project Four",
+        "description": "This is the fourth project.",
+        "image": "https://placehold.co/250x150",
+        "link": "https://example.com/project-four"
+        }
+    ]
+}
