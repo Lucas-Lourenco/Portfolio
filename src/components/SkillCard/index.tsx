@@ -12,7 +12,7 @@ import {
   SiGit, 
   SiGithub, 
   SiJest 
-} from 'react-icons/si'; // Usando Simple Icons para alguns
+} from 'react-icons/si'; 
 import { FaQuestionCircle } from 'react-icons/fa';
 
 

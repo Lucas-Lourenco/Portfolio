@@ -16,10 +16,9 @@ export default function Navigation() {
   return (
     <header>
       <nav className="flex items-center justify-between p-6 lg:px-8">
-        {/* Adicionei um logo/título para empurrar o menu para o lugar certo */}
+        
         <div className="flex-1">
           <a href="#home" className="font-bold text-2xl text-white">
-            {/* Seu Nome ou Logo */}
           </a>
         </div>
         

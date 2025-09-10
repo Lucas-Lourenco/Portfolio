@@ -1,13 +1,8 @@
 import { useEffect, useState } from "react";
-
 import ProjectCard from "../ProjectCard";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-
-
 import "swiper/swiper-bundle.css";
-
 import "./project.css";
 import GetDataProjects from "../../service/DataApiProjects";
 
@@ -54,7 +49,7 @@ export default function Projects() {
               640: { slidesPerView: 1 },
               1024: { slidesPerView: 1 },
             }}
-            // Adicione a classe customizada aqui
+            
             className="w-5/6 my-swiper-container"
           >
             {projects.map((project) => (

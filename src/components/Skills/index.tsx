@@ -49,7 +49,7 @@ export default function Skill() {
               640: { slidesPerView: 1 },
               1024: { slidesPerView: 1 },
             }}
-            // Adicione a classe customizada aqui
+            
             className="w-4/5 my-swiper-container"
           >
             {skill.map((skill) => (
