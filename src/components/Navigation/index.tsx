@@ -1,9 +1,10 @@
 
 
 const links = [
-  { href: "#home", label: "Início" },
-  { href: "#about", label: "Sobre" },
+  { href: "#home", label: "Inicio" },
+  { href: "#about", label: "Sobre mim" },
   { href: "#projects", label: "Projetos" },
+  { href: "#skills", label: "Habilidades" },
   { href: "#contact", label: "Contato" },
 ];
 

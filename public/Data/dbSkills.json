@@ -1,0 +1,52 @@
+{
+    "skills": [
+        {
+        "id": 1,
+        "title": "HTML5",
+        "description": "HyperText Markup Language",
+        "iconId": "html5"
+        },
+        {
+        "id": 2,
+        "title": "CSS3",
+        "description": "Cascading Style Sheets",
+        "iconId": "css3"
+        },
+        {
+        "id": 3,
+        "title": "JavaScript",
+        "description": "Programming Language",
+        "iconId": "javascript"
+        },
+        {
+        "id": 4,
+        "title": "TypeScript",
+        "description": "Superset of JavaScript",
+        "iconId": "typescript"
+        },
+        {
+        "id": 5,
+        "title": "React",
+        "description": "JavaScript Library for Building User Interfaces",
+        "iconId": "react"
+        },
+        {
+        "id": 6,
+        "title": "Git",
+        "description": "Version Control System",
+        "iconId": "git"
+        },
+        {
+        "id": 7,
+        "title": "GitHub",
+        "description": "Code Hosting Platform",
+        "iconId": "github"
+        },
+        {
+        "id": 8,
+        "title": "Jest",
+        "description": "JavaScript Testing Framework",
+        "iconId": "jest"
+        }
+    ]
+}

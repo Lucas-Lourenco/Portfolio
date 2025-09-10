@@ -1,0 +1,52 @@
+/* Adiciona uma classe ao container do Swiper para garantir que nosso estilo não afete outros swipers no site */
+.my-swiper-container {
+  position: relative;
+  padding: 0 50px; /* Adiciona espaço nas laterais para as setas não ficarem coladas */
+}
+
+/* Estilização das setas de navegação (Próximo e Anterior) */
+.my-swiper-container .swiper-button-next,
+.my-swiper-container .swiper-button-prev {
+  /* Muda a cor da seta e do fundo */
+  color: #dfb030; /* Cor do ícone da seta */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 3rem; 
+  height: 3rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .swiper-button-prev:hover {
+  background-color: rgb(64, 50, 3); /* Fundo mais escuro ao passar o mouse */
+}
+ .swiper-button-next:hover {
+  background-color: rgb(64, 50, 3); /* Fundo mais escuro ao passar o mouse */
+}
+/* Ajusta o tamanho do ícone da seta dentro do círculo */
+.my-swiper-container .swiper-button-next::after,
+.my-swiper-container .swiper-button-prev::after {
+  font-size: 18px; /* Tamanho do ícone ">" */
+  font-weight: bold;
+}
+
+/* Posição da seta "Próximo" (direita) */
+.my-swiper-container .swiper-button-next {
+  right: 0px; /* Move para a borda direita */
+}
+
+/* Posição da seta "Anterior" (esquerda) */
+.my-swiper-container .swiper-button-prev {
+  left: 0px; /* Move para a borda esquerda */
+}
+
+/* Estilização da paginação (as bolinhas) */
+.my-swiper-container .swiper-pagination-bullet {
+  background: #cccccc; /* Cor da bolinha inativa */
+  opacity: 1;
+    width: 12px;
+}
+
+.my-swiper-container .swiper-pagination-bullet-active {
+  background: linear-gradient(to right, #facc15, #f59e42, #f97316); /* Cor da bolinha ativa (Tomate) */
+}

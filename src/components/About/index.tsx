@@ -1,5 +1,6 @@
 import imagemFace from '../../image/face.png'
 import illustration from '../../image/illustration.png'
+
 export default function About() {
     return (
         <>
@@ -40,7 +41,7 @@ export default function About() {
 
                         Nas horas vagas, sou um grande entusiasta de filmes, séries, animes, jogos e pela cultura geek em geral.
                     </p>
-                    <button className='text-center m-auto  '>Baixar CV</button>
+                    <button className='text-center  m-auto  '>Baixar CV</button>
 
                     
 
