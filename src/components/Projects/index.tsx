@@ -5,10 +5,9 @@ import ProjectCard from "../ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-// Importação do CSS do Swiper
+
 import "swiper/swiper-bundle.css";
 
-// Importe seu arquivo CSS customizado
 import "./project.css";
 import GetDataProjects from "../../service/DataApiProjects";
 
@@ -34,13 +33,13 @@ export default function Projects() {
 
   return (
     <>
-      <h2   id="projects" className="m-4 p-4 text-4xl leading-8 flex flex-col items-center gap-6">
+      <h2   id="projects" className="m-1 p-4 text-xl md:text-2xl lg:text-4xl leading-1 flex flex-col items-center gap-2">
         PROJETOS
       </h2>
 
       <section
       
-        className="w-full p-2 pb-0 m-2 border-b border-[rgb(70,63,45)] flex justify-center"
+        className="w-full p-1 pb-0 m-1 border-b border-[rgb(70,63,45)] flex justify-center"
       >
         {isLoading ? (
           <p>Carregando...</p>
@@ -56,7 +55,7 @@ export default function Projects() {
               1024: { slidesPerView: 1 },
             }}
             // Adicione a classe customizada aqui
-            className="w-4/5 my-swiper-container"
+            className="w-5/6 my-swiper-container"
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id} className="flex-shrink-0">
