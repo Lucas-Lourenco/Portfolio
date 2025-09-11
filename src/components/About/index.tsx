@@ -1,3 +1,4 @@
+import Contact from '../../Contact';
 import imagemFace from '../../image/face.png'
 import illustration from '../../image/illustration.png'
 
@@ -13,6 +14,7 @@ export default function About() {
                    
                     <h2 className="text-4xl sm:text-5xl lg:text-[4.25rem] font-bold">Lucas Lourenço</h2>
                     <p className='text-2xl sm:text-3xl lg:text-4xl mt-2'>Desenvolvedor Frontend</p>
+                    <Contact/>
                 </div>
                 <div>
                     
