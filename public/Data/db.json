@@ -4,28 +4,28 @@
         "id": 1,
         "title": "Pokedex",
         "description": "This is the first project.",
-        "image": "https://placehold.co/250x150",
+        "image": "/Data/videos-picture/pokedex-photo.png",
         "link": "https://example.com/project-one"
         },
         {
         "id": 2,
-        "title": "Project Two",
+        "title": "Sitio da Pedra",
         "description": "This is the second project.",
-        "image": "https://placehold.co/250x150",
+        "image": "/Data/videos-picture/sitio-da-pedra-photo.png",
         "link": "https://example.com/project-two"
         },
         {
         "id": 3,    
-        "title": "Project Three",
+        "title": "GitHub API",
         "description": "This is the third project.",
-        "image": "https://placehold.co/250x150",
+        "image": "/Data/videos-picture/api-github-photo.png",
         "link": "https://example.com/project-three"
         },
         {
         "id": 4,
-        "title": "Project Four",
+        "title": "Landing Page Huddle",
         "description": "This is the fourth project.",
-        "image": "https://placehold.co/250x150",
+        "image": "/Data/videos-picture/landing-page-huddle-photo.png",
         "link": "https://example.com/project-four"
         }
     ]

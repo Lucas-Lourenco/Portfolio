@@ -7,8 +7,7 @@ import { FaGithub } from "react-icons/fa";
 export default function Contact() {
   return (
     
-      <div className=" flex gap-3 rounded-lg mt-3 lg:text-3xl md:text-2xl  
-      ">
+      <div className=" flex gap-3 rounded-lg mt-3 lg:text-3xl md:text-2xl pb-2 mb-2">
         <a href="https://github.com/Lucas-Lourenco " target="_blank" rel="noopener noreferrer" className="icons">
         <FaGithub />
       </a>
