@@ -1,26 +1,22 @@
 import './styles/GlobalStyle/index.css'
-import Header from './components/Header'
-import About from './components/About'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import Container from './components/Container'
-import Footer from './components/Footer'
+
+
+import { AppRoutes } from './routes/AppRoutes'
 
 function App() {
 
 
   return (
     <>
-      <Container>
 
 
+      
+      
+      <AppRoutes>
+        
+      </AppRoutes>
 
-      <Header />
-      <About  />
-      <Projects/>
-      <Skills/>
-      <Footer/>
-      </Container>
+     
     </>
   )
 }

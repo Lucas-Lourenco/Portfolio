@@ -4,28 +4,31 @@
         "id": 1,
         "title": "Pokedex",
         "description": "This is the first project.",
-        "image": "/Data/videos-picture/pokedex-photo.png",
+        "image": "/Data/picture/pokedex-photo.png",
         "link": "https://example.com/project-one"
         },
         {
         "id": 2,
         "title": "Sitio da Pedra",
-        "description": "This is the second project.",
-        "image": "/Data/videos-picture/sitio-da-pedra-photo.png",
-        "link": "https://example.com/project-two"
+        "description": "Uma Landing page desenvolvida para um sitio localizado em Minas Gerais. O objetivo do projeto é apresentar o local e suas acomodações, além de fornecer informações sobre as atividades disponíveis no ambiente. O site conta com as sessoes:  Sobre, Serviço e Contato.",
+        "tecnologias": ["HTML5", "CSS3", "JavaScript"],
+        "image": "/Data/picture/sitio-da-pedra-photo.png",
+        "video": "/Data/video/video-sitio-da-pedra.mp4",
+        "link": "https://lucas-lourenco.github.io/Sitio-da-pedra/",
+        "linkRepositorio": "https://github.com/Lucas-Lourenco/Sitio-da-pedra"
         },
         {
         "id": 3,    
         "title": "GitHub API",
         "description": "This is the third project.",
-        "image": "/Data/videos-picture/api-github-photo.png",
+        "image": "/Data/picture/api-github-photo.png",
         "link": "https://example.com/project-three"
         },
         {
         "id": 4,
         "title": "Landing Page Huddle",
         "description": "This is the fourth project.",
-        "image": "/Data/videos-picture/landing-page-huddle-photo.png",
+        "image": "/Data/picture/landing-page-huddle-photo.png",
         "link": "https://example.com/project-four"
         }
     ]

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 import ProjectCard from "../ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -54,7 +55,10 @@ export default function Projects() {
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id} className="flex-shrink-0">
+                <Link 
+                to={`/project/${project.id}`} className="  hover:underline">
                 <ProjectCard project={project} />
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
