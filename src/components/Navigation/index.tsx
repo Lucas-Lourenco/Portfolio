@@ -15,7 +15,7 @@ export default function Navigation() {
 
   return (
     <header>
-      <nav className="flex items-center justify-between p-6 lg:px-8">
+      <nav className="flex items-center justify-between p-6 lg:px-2">
         
         <div className="flex-1">
           <a href="#home" className="font-bold text-2xl text-white">
@@ -23,12 +23,12 @@ export default function Navigation() {
         </div>
         
         <div className="hidden lg:flex">
-          <ul className="flex gap-6">
+          <ul className="flex gap-2">
             {links.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="link-dourado hover:text-yellow-500 transition-colors duration-300 pr-3 text-2xl"
+                  className="link-dourado hover:text-amber-700 transition-colors duration-300 pr-3 text-2xl"
                 >
                   {link.label}
                 </a>
@@ -54,7 +54,7 @@ export default function Navigation() {
           <div className="flex items-center justify-end">
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-400"
+              className="-m-2.5 rounded-md p-2.5 text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               <XMarkIcon className="h-8 w-8" />

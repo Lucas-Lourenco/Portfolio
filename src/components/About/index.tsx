@@ -1,4 +1,4 @@
-import Contact from '../../Contact';
+import Contact from '../Contact';
 import imagemFace from '../../image/face.png'
 import illustration from '../../image/illustration.png'
 

@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { ThemeContext } from "../context/ThemeContext";
+import { ThemesConfig } from "../context/theme";
 
 interface ProjectDetails {
   id: number;
@@ -14,6 +16,8 @@ interface ProjectDetails {
 }
 
 export default function ProjectDetailPage() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const currentTheme = ThemesConfig[theme];
   const { id } = useParams();
   const navigate = useNavigate();
   const numericId = id ? Number(id) : null;
@@ -35,14 +39,11 @@ export default function ProjectDetailPage() {
     })();
   }, [numericId]);
 
-
-  
   function goHome() {
     navigate("/");
   }
 
   const selectedProject = project.find((p) => p.id === numericId);
-
 
   if (isLoading) {
     return <p className="text-center mt-8">Carregando...</p>;
@@ -53,22 +54,31 @@ export default function ProjectDetailPage() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto p-4 flex flex-col justify-center items-center">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-4">{selectedProject.title}</h1>
+    <div className="max-w-5xl mx-auto p-4 flex flex-col justify-center items-center ">
+      
+     
+      <div className="flex justify-around items-center w-full mb-6">
+        <h1 className="text-2xl sm:text-3xl font-bold">
+          {selectedProject.title}
+        </h1>
 
-      <div className="flex flex-wrap gap-2 mb-6">
-        {selectedProject.tecnologias.map((tech, idx) => (
-          <span
-            key={idx}
-            className="px-3 py-1 rounded-full text-sm border"
-          >
-            {tech}
-          </span>
-        ))}
+        <button
+          onClick={toggleTheme}
+          className=" rounded-full hover:opacity-80 transition flex items-center justify-center "
+          aria-label="Trocar tema"
+        >
+          <img
+            src={currentTheme.icon}
+            alt={`Ícone do tema ${theme}`}
+            className="w-6 h-6"
+          />
+        </button>
       </div>
 
+
+  
       {selectedProject.video && (
-        <div className="w-5/6 mb-6 ">
+        <div className="w-5/6 mb-6">
           <video
             src={selectedProject.video}
             muted
@@ -80,11 +90,23 @@ export default function ProjectDetailPage() {
         </div>
       )}
 
+      
+      <div className="flex flex-wrap gap-2 mb-6 ">
+         {selectedProject.tecnologias.map((tech, idx) => (
+          <span
+            key={idx}
+            className="px-3 py-1 rounded-full text-sm border"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+   
       <p className="text-base sm:text-lg leading-relaxed mb-6">
         {selectedProject.description}
       </p>
 
-      <div className="flex flex-wrap gap-4 items-center">
+      <div className="flex flex-wrap gap-4 items-center justify-center mt-10 w-full">
         <a
           href={selectedProject.link}
           target="_blank"
@@ -93,6 +115,7 @@ export default function ProjectDetailPage() {
         >
           Acessar Projeto
         </a>
+
         <a
           href={selectedProject.linkRepositorio}
           target="_blank"
@@ -102,10 +125,12 @@ export default function ProjectDetailPage() {
           Repositório
         </a>
 
-        <button className="flex-1 sm:flex-none px-4 py-2 text-center rounded-xl border hover:opacity-80 transition icons" onClick={goHome}>
-            ⬅ Voltar
+        <button
+          className="flex-1 sm:flex-none px-4 py-2 text-center rounded-xl border hover:opacity-80 transition icons"
+          onClick={goHome}
+        >
+          ⬅ Voltar
         </button>
-
       </div>
     </div>
   );
