@@ -24,7 +24,7 @@ export default function Contact() {
 
       
       <a href="mailto:lucas.dev.profissional2001@gmail.com"
-      target="_blank" rel="noopener noreferrer" className="icons">
+      target="_blank" className="icons">
         <SiGmail />
       </a>
             
