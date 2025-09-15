@@ -13,9 +13,15 @@ export default function Contact() {
       </a>
 
 
-      <a href="https://wa.me/5531995889036" target="_blank" rel="noopener noreferrer" className="icons">
+      <a
+        href="https://wa.me/5531995889036?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="icons"
+      >
         <FaWhatsapp />
       </a>
+
 
 
       <a href="https://linkedin.com/in/lucas-lourenço-a88254302" target="_blank" rel="noopener noreferrer" className="icons">
