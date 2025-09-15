@@ -42,7 +42,7 @@ export default function About() {
                         Nas horas vagas, sou um grande entusiasta de filmes, séries, animes, jogos e pela cultura geek em geral.
                     </p>
                     
-                    <a href="../src/files/CV_Lucas_Lourenco.pdf" target="_blank"  className='icons text-center w-[9rem] lg:ml-0 m-auto '>
+                    <a href="/files/CV_Profile.pdf" target="_blank"  className='icons text-center w-[9rem] lg:ml-0 m-auto '>
                     
                         Baixar CV
                     </a>
