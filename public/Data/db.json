@@ -7,7 +7,7 @@
         "tecnologias": ["React", "TypeScript", "Context API", "Jest"],
         "image": "/Data/picture/pokedex-photo.png",
         "video": "/Data/video/video-pokedex.mp4",
-        "link": "https://lucas-lourenco.github.io/Sitio-da-pedra/",
+        "link": "https://quest-pokedex-bice.vercel.app/",
         "linkRepositorio": "https://github.com/Lucas-Lourenco/Quest-pokedex"
         },
         {
