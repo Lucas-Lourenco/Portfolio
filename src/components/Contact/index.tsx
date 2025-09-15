@@ -23,7 +23,8 @@ export default function Contact() {
       </a>
 
       
-      <a href="mailto:lucas.dev.profissional2001@gmail.com" className="icons">
+      <a href="mailto:lucas.dev.profissional2001@gmail.com"
+      target="_blank" rel="noopener noreferrer" className="icons">
         <SiGmail />
       </a>
             
