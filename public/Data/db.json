@@ -3,14 +3,17 @@
         {
         "id": 1,
         "title": "Pokedex",
-        "description": "This is the first project.",
+        "description": "Uma Pokedex interativa construída em React, consumindo dados da PokeAPI. Permite navegar entre uma lista de Pokémons e visualizar detalhes individuais de cada criatura além de permitir a busca por tipos específicos de pokemons.",
+        "tecnologias": ["React", "TypeScript", "Context API", "Jest"],
         "image": "/Data/picture/pokedex-photo.png",
-        "link": "https://example.com/project-one"
+        "video": "/Data/video/video-pokedex.mp4",
+        "link": "https://lucas-lourenco.github.io/Sitio-da-pedra/",
+        "linkRepositorio": "https://github.com/Lucas-Lourenco/Quest-pokedex"
         },
         {
         "id": 2,
         "title": "Sitio da Pedra",
-        "description": "Uma Landing page desenvolvida para um sitio localizado em Minas Gerais. O objetivo do projeto é apresentar o local e suas acomodações, além de fornecer informações sobre as atividades disponíveis no ambiente. O site conta com as sessoes:  Sobre, Serviço e Contato.",
+        "description": "Uma Landing page desenvolvida para um sitio localizado em Minas Gerais. O Sítio da Pedra é um projeto de site voltado para o aluguel de um sítio que conta com uma área com belíssima vista para uma cachoeira. O objetivo é apresentar a infraestrutura do local, como a área de churrasco, piscina e o fácil acesso, facilitando o contato com os interessados por meio do WhatsApp e Facebook.",
         "tecnologias": ["HTML5", "CSS3", "JavaScript"],
         "image": "/Data/picture/sitio-da-pedra-photo.png",
         "video": "/Data/video/video-sitio-da-pedra.mp4",
@@ -20,16 +23,22 @@
         {
         "id": 3,    
         "title": "GitHub API",
-        "description": "This is the third project.",
+        "description": "Este projeto permite buscar usuários do GitHub e exibir suas informações, incluindo repositórios e foto de perfil, utilizando a API do GitHub.",
+        "tecnologias": ["HTML5", "CSS3", "JavaScript"],
         "image": "/Data/picture/api-github-photo.png",
-        "link": "https://example.com/project-three"
+        "video": "/Data/video/video-fetch-github.mp4",
+        "link": "https://lucas-lourenco.github.io/projeto-Quest-fetch-github-api-main/",
+        "linkRepositorio": "https://github.com/Lucas-Lourenco/projeto-Quest-fetch-github-api-main"
         },
         {
         "id": 4,
         "title": "Landing Page Huddle",
-        "description": "This is the fourth project.",
+        "description": "Este projeto é uma página web responsiva com um layout moderno e limpo. Ele utiliza HTML e CSS para criar uma interface flexível e visualmente atraente. A página inclui um cabeçalho, uma seção principal com uma imagem com conteúdo, e um rodapé com links para redes sociais. O design garante alinhamento e funcionalidade adequados em diferentes tamanhos de tela, desde desktops até dispositivos móveis.",
+        "tecnologias": ["HTML5", "CSS3"],
         "image": "/Data/picture/landing-page-huddle-photo.png",
-        "link": "https://example.com/project-four"
+        "video": "/Data/video/video-hubble.mp4",
+        "link": "https://lucas-lourenco.github.io/Projeto-Landing-Page-Huddle/",
+        "linkRepositorio": "https://github.com/Lucas-Lourenco/Projeto-Landing-Page-Huddle"
         }
     ]
 }

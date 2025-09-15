@@ -91,11 +91,11 @@ export default function ProjectDetailPage() {
       )}
 
       
-      <div className="flex flex-wrap gap-2 mb-6 ">
+      <div className="flex flex-wrap gap-2 mb-6 text-center justify-center">
          {selectedProject.tecnologias.map((tech, idx) => (
           <span
             key={idx}
-            className="px-3 py-1 rounded-full text-sm border"
+            className="px-3 py-1 rounded-full text-sm border border-orange-700"
           >
             {tech}
           </span>

@@ -12,9 +12,9 @@ function App() {
 
       
       
-      <AppRoutes>
+      <AppRoutes/>
         
-      </AppRoutes>
+   
 
      
     </>
