@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+
+// Tabela de Projetos
+model Project {
+  id              Int      @id @default(autoincrement())
+  title           String
+  description     String
+  tecnologias     String[] 
+  image           String   
+  video           String   
+  link            String   
+  linkRepositorio String   
+  createdAt       DateTime @default(now())
+}
+
+// Tabela de Habilidades (Nova!)
+model Skill {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  iconId      String   
+}
