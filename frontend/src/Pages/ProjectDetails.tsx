@@ -22,28 +22,42 @@ export default function ProjectDetailPage() {
   const navigate = useNavigate();
   const numericId = id ? Number(id) : null;
 
-  const [project, setProject] = useState<ProjectDetails[]>([]);
+  const [projects, setProjects] = useState<ProjectDetails[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  
   async function fetchDetails() {
-    const response = await fetch("/Data/db.json");
-    const data = await response.json();
-    return data.projects;
+    
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+    
+    try {
+      
+      const response = await fetch(`${apiUrl}/projects`);
+      const data = await response.json();
+      
+      
+      return data; 
+    } catch (error) {
+      console.error("Erro ao buscar detalhes:", error);
+      return [];
+    }
   }
+ 
 
   useEffect(() => {
     (async () => {
       const data = await fetchDetails();
-      setProject(data);
+      setProjects(data);
       setIsLoading(false);
     })();
-  }, [numericId]);
+  }, []); 
 
   function goHome() {
     navigate("/");
   }
 
-  const selectedProject = project.find((p) => p.id === numericId);
+  
+  const selectedProject = projects.find((p) => p.id === numericId);
 
   if (isLoading) {
     return <p className="text-center mt-8">Carregando...</p>;
@@ -56,7 +70,6 @@ export default function ProjectDetailPage() {
   return (
     <div className="max-w-5xl mx-auto p-4 flex flex-col justify-center items-center ">
       
-     
       <div className="flex justify-around items-center w-full mb-6">
         <h1 className="text-2xl sm:text-3xl font-bold">
           {selectedProject.title}
@@ -75,8 +88,6 @@ export default function ProjectDetailPage() {
         </button>
       </div>
 
-
-  
       {selectedProject.video && (
         <div className="w-5/6 mb-6">
           <video
@@ -89,7 +100,6 @@ export default function ProjectDetailPage() {
           />
         </div>
       )}
-
       
       <div className="flex flex-wrap gap-2 mb-6 text-center justify-center">
          {selectedProject.tecnologias.map((tech, idx) => (

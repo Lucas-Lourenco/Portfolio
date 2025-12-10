@@ -1,9 +1,21 @@
+export default async function GetDataProjects() {
+  
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
 
-export default async function GetDataSkills() {
-    const response = await fetch('/Data/dbSkills.json');
-    const data = await response.json();
-    console.log('api',data);
-    const skills = data.skills;
-    console.log('skills',skills);
-    return skills;
+    try {
+       
+        const response = await fetch(`${apiUrl}/skills`);
+
+        if (!response.ok) {
+            throw new Error('Erro ao conectar com a API');
+        }
+
+        const data = await response.json();
+        
+        return data;
+
+    } catch (error) {
+        console.error("Falha ao buscar projetos:", error);
+        return []; // Retorna lista vazia para não quebrar o site se a API falhar
+    }
 }
