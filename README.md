@@ -88,7 +88,7 @@ npm run dev
 
 ```
 ---
-## ℹ️ Nota sobre a Performance (Cold Start)
+## ℹ️ Nota sobre a Performance Inicial (Cold Start)
 Como este é um projeto de portfólio, o Backend está hospedado no plano gratuito do Render. Isso significa que o servidor entra em modo de hibernação após inatividade.
 
 ⚠️ A primeira requisição pode levar cerca de 30 a 50 segundos para "acordar" o servidor. As requisições seguintes são instantâneas. Agradeço a compreensão!
