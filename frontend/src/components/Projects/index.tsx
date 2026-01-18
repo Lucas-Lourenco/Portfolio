@@ -38,7 +38,7 @@ export default function Projects() {
         className="w-full p-1 pb-0 m-1 border-b border-[rgb(70,63,45)] flex justify-center"
       >
         {isLoading ? (
-          <p>Carregando...</p>
+          <p>Carregando... Servidor do render "acordando".</p>
         ) : (
           <Swiper
             modules={[Navigation, Pagination]}
