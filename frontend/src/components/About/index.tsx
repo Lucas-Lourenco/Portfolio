@@ -37,7 +37,7 @@ export default function About() {
                 <div className='w-full lg:w-1/2 flex flex-col'>
                    
                     <p className='text-lg lg:text-xl text-justify mb-6'>
-                        Olá! Meu nome é Lucas Lourenço e sou um desenvolvedor FullStack e engenheiro de software em formação. Tenho inglês avançado e uma paixão imensa por tecnologia, e tenho certeza que posso agregar valor a qualquer equipe com minhas habilidades.
+                        Olá! Meu nome é Lucas Lourenço e sou um desenvolvedor FullStack e engenheiro de software em formação. Tenho uma paixão imensa por tecnologia, e tenho certeza que posso agregar valor a qualquer equipe com minhas habilidades.
                         Estou sempre me desafiando com novos projetos e participando de comunidades de programação para buscar feedback de outros desenvolvedores. Além de ajudar outras pessoas com o que já aprendi, gosto de usar o meu conhecimento para encontrar soluções criativas e eficientes para problemas.
                         Nas horas vagas, sou um grande entusiasta de filmes, séries, animes, jogos e pela cultura geek em geral.
                     </p>
